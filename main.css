@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: Poppins;
+}
+#myBtn{
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #a796e4;
+    color: white;
+    border-radius: 40%;
+    cursor: pointer;
+    padding: 15px;
+    font-family: Poppins;
+}
+.logo{
+    height: 150px;
+    margin-bottom: -15px;
+}
+.tagline{
+    text-decoration: none;
+    color: black;
+    font-family: Poppins;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.featuredimage{
+    width: 500px;
+}
+.projecttitle{
+    margin-top: -70px;
+    margin-left: 20px;
+    text-align: center;
+}

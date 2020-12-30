@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Madeleine Huang</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Scroll up">^</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+    
+<!--The Header-->
+<center>
+    <a href="index.html" class="tagline">
+        <img src="assets/MadeleineLogo.png" alt="Madeleine's Logo" class="logo">
+        <p>Art & Design</p>
+    </a>
+</center>
+
+
+<!--The Projects-->
+<div class="grid">
+
+    <div>
+        <center><img src="assets/seeweedoriginalmockup.png" alt="seeweed Original" class="featuredimage"></center>
+        <h1 class="projecttitle">seeweed</h1>
+    </div>
+
+    <div>
+        <center><img src="assets/acolorfulgarden.jpg" alt="A Colorful Garden" class="featuredimage"></center>
+        <h1 class="projecttitle">A Colorful Garden</h1>
+    </div>
+
+    <div>
+        
+    </div>
+
+</div>
+
+</body>
+</html>
