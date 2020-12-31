@@ -10,12 +10,25 @@ body{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #a796e4;
+    background-color: #4dcbb0;
+    width: 100%;
     color: white;
-    border-radius: 40%;
     cursor: pointer;
-    padding: 15px;
     font-family: Poppins;
+}
+.link{
+    color: #4dcbb0;
+    font-weight: bold;
+    text-decoration: none;
+}
+.link:hover{
+    animation-name: linkhover;
+    animation-duration: 0.3s;
+    color: #e3a0a0;
+}
+@keyframes linkhover{
+    from {color: #4dcbb0;}
+    to {color: #e3a0a0}
 }
 .logo{
     height: 150px;
@@ -39,4 +52,6 @@ body{
     margin-top: -70px;
     margin-left: 20px;
     text-align: center;
+    text-decoration: none;
+    color: black;
 }

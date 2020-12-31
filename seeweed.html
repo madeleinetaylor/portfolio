@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>seeweed >> Madeleine Huang</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<style>
+    .seeweedgrid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .seeweedimage{
+        width: 500px;
+    }
+</style>
+
+<button onclick="topFunction()" id="myBtn" title="Scroll up">^</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+    
+<!--The Header-->
+<center>
+    <a href="index.html" class="tagline">
+        <img src="assets/MadeleineLogo.png" alt="Madeleine's Logo" class="logo">
+        <p>Art & Design</p>
+    </a>
+</center>
+
+
+<!--Images-->
+
+<div class="seeweedgrid">
+    <center>
+        <img src="assets/seeweedoriginalmockup.png" alt="seeweed Original" class="seeweedimage">
+    </center>
+
+    <center>
+        <img src="assets/seeweedlimemockup.png" alt="seeweed Lime" class="seeweedimage">
+    </center>
+
+    <center>
+        <img src="assets/seeweedsrirachamockup.png" alt="seeweed Sriracha" class="seeweedimage">
+    </center>
+</div>
+
+<center><p>This was a pretend packaging project I did for a brand I made called <i>seeweed</i>. You can see how I made it <a href="https://whimsicalwatercolor.wordpress.com/2020/09/30/designing-my-very-own-brand/" class="link" target="_blank">here</a>.</p></center>
+
+</body>
+</html>
