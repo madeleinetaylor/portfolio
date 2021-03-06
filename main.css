@@ -17,18 +17,13 @@ body{
     font-family: Poppins;
 }
 .link{
-    color: #4dcbb0;
-    font-weight: bold;
+    color: transparent;
     text-decoration: none;
+    text-shadow: 0px 0px 0px #4dcbb0;
+    transition: text-shadow 0.1s linear;
 }
 .link:hover{
-    animation-name: linkhover;
-    animation-duration: 0.3s;
-    color: #e3a0a0;
-}
-@keyframes linkhover{
-    from {color: #4dcbb0;}
-    to {color: #e3a0a0}
+    text-shadow: 0px -4px 0px lightseagreen;
 }
 .logo{
     height: 150px;
@@ -47,6 +42,15 @@ body{
 }
 .featuredimage{
     width: 500px;
+}
+.featuredimage:hover{
+    animation-name: featured;
+    animation-duration: 0.4s;
+    opacity: 80%;
+}
+@keyframes featured{
+    from {opacity: 100%}
+    to {opacity: 80%}
 }
 .projecttitle{
     margin-top: -70px;
