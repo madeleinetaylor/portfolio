@@ -7,8 +7,29 @@
 <body>
 
 <style>
+    .animation {
+        width: 20px;
+        height: 20px;
+        background-color: #e3a0a0;
+        position: absolute;
+        border-radius: 50%;
+        animation-name: moving;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        top: 20;
+        left: 20;
+    }
 
+    @keyframes moving {
+        0%   {left:20px; top:20px;}
+        20%  {left:1500px; top:900px;}
+        30%  {left:1200px; top:950px;}
+        75%  {left:500px; top:1000px;}
+        100% {left:20px; top:20px;}
+    }
 </style>
+
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div class="animation"></div></a>
 
 <button onclick="topFunction()" id="myBtn" title="Scroll up"><img src="assets/MadeleineLogo.png" class="topbuttonlogo"></button>
 
